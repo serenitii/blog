@@ -11,7 +11,7 @@ categories: jekyll update
 
 boost  
 
-```bash
+``` bash
 sh bootstrap.sh 
 
 ./b2 --reconfigure stage toolset=gcc cxxflags="-std=c++1z -fPIC -O3 -Werror -Wno-unused-local-typedef -Wno-deprecated-declarations -Wno-unused-function" link=static,shared variant=release threading=multi linkflags="-fPIC"
@@ -20,12 +20,21 @@ sudo ./b2 install
 ```
 
 flatbuffers
-```
+``` bash
 cmake -G "Unix Makefiles" && make && sudo make install
 ```
 
 MySQL Library  
 [Download](https://dev.mysql.com/downloads/connector/cpp/)
+
+NodeJs
+``` bash
+curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
+sudo sh nodesource_setup.sh
+sudo apt install nodejs
+node -v
+```
+
 
 ## MacOS
 
@@ -44,8 +53,9 @@ brew install flatbuffers
 [Download](https://dev.mysql.com/downloads/connector/cpp/)
 
 
+> NodeJS
 ```bash
-echo $0
+brew install nodejs
 ```
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
