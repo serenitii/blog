@@ -7,7 +7,9 @@ categories: jekyll update
 
 # 나의 서버 개발 환경 구축 
 
-## boost
+## Ubuntu 
+
+boost  
 
 ```bash
 sh bootstrap.sh 
@@ -17,26 +19,34 @@ sh bootstrap.sh
 sudo ./b2 install
 ```
 
-CHANGE .   
-CHANGE 2nd
+flatbuffers
+```
+cmake -G "Unix Makefiles" && make && sudo make install
+```
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+MySQL Library  
+[Download](https://dev.mysql.com/downloads/connector/cpp/)
 
-Jekyll requires blog post files to be named according to the following format:
+## MacOS
 
-`YEAR-MONTH-DAY-title.MARKUP`
+> boost  
+```
+brew install boost
+```
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+> flatbuffers   
+```
+brew install flatbuffers
+```
 
-Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+> MySQL Library    
+[Download](https://dev.mysql.com/downloads/connector/cpp/)
+
+
+```bash
+echo $0
+```
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
